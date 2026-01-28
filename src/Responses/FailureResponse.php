@@ -16,7 +16,7 @@ class FailureResponse extends MailchimpResponse
      * @param int           $http_code
      * @param callable|null $failure_callback
      */
-    public function __construct($headers, $body, $http_code, callable $failure_callback = null)
+    public function __construct($headers, $body, $http_code, ?callable $failure_callback = null)
     {
         parent::__construct($headers, $body, $http_code);
 

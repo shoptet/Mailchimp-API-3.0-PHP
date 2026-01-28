@@ -16,7 +16,7 @@ class SuccessResponse extends MailchimpResponse
      * @param int           $http_code
      * @param callable|null $success_callback
      */
-    public function __construct($headers, $body, $http_code, callable $success_callback = null)
+    public function __construct($headers, $body, $http_code, ?callable $success_callback = null)
     {
         parent::__construct($headers, $body, $http_code);
 

@@ -22,7 +22,7 @@ class Tags extends ApiResource
      * @param MailchimpRequest $request
      * @param MailchimpSettings|null $settings
      */
-    public function __construct(MailchimpRequest $request, MailchimpSettings $settings = null)
+    public function __construct(MailchimpRequest $request, ?MailchimpSettings $settings = null)
     {
         parent::__construct($request, $settings);
         $request->appendToEndpoint(self::URL_COMPONENT);

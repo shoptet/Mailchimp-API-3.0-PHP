@@ -87,7 +87,7 @@ class MailchimpConnection implements HttpRequest
      *
      * @throws MailchimpException
      */
-    public function __construct(MailchimpRequest &$request, MailchimpSettings &$settings = null)
+    public function __construct(MailchimpRequest &$request, ?MailchimpSettings &$settings = null)
     {
         $this->current_request = $request;
 
