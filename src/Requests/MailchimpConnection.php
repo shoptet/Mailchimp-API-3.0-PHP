@@ -287,7 +287,6 @@ class MailchimpConnection implements HttpRequest
      */
     public function close()
     {
-        curl_close($this->handle);
     }
 
     /**
